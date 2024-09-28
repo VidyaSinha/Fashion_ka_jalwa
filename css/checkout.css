@@ -10,6 +10,105 @@ Licence: <a href="https://www.templateonweb.com/license">Website Template Licenc
 padding-top:30px;
 padding-bottom:30px; 
  }
+
+ .hero {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #1a1a1a;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #a81c51;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #ccc; /* Light grey for contrast */
+}
+
+.cta-btn {
+  padding: 12px 36px;
+  background-color: #a81c51;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #ff69b4;
+}
+
+/* Categories */
+.categories {
+  padding: 30px;
+  background-color: #111;
+}
+
+.categories h2 {
+  font-size: 32px;
+  color: #a81c51;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.category-list a {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.category-list a:hover {
+  background-color: #ff69b4;
+  color: #000;
+}
+
+/* Forum Section */
+.forum {
+  padding: 40px 20px;
+  background-color: #1a1a1a;
+}
+
+.forum h2 {
+  font-size: 36px;
+  color: #a81c51;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.thread {
+  background-color: #1c1c1c;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.thread:hover {
+  background-color: #333; /* Slight hover effect on thread */
+}
+
+.thread h3 a {
+  font-size: 24px;
+  color: #a81c51;
+}
+
+.thread p {
+  font-size: 16px;
+  color: #ccc; /* Light grey for text */
+}
+
+.thread-info {
+  font-size: 14px;
+  color: #888; /* Slightly darker grey for meta information */
+}
 .checkout_1l1 .form-control{
  height:45px;
  margin-top:15px;
