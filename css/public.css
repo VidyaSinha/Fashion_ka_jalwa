@@ -1,0 +1,35 @@
+#about_h {
+    padding: 60px 0; /* Adjust padding for spacing */
+}
+
+.about_h1 {
+    display: flex; /* Use flexbox to arrange items */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.about_h1l {
+    text-align: center; /* Center the video */
+}
+
+.about_h1r {
+    margin-top: 20px; /* Space below the video */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .about_h1 {
+        flex-direction: column; /* Keep column layout for larger screens */
+    }
+}
+
+.text-center {
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove default margins for consistency */
+}
+
+/* Optional: Adding margin to separate headings from paragraphs */
+h1 {
+    margin-top: 20px; /* Space above the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
