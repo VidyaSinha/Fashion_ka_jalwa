@@ -1,0 +1,83 @@
+/* Designer Profile Page CSS */
+
+/* Main container for the profile */
+.profile-container {
+    max-width: 800px; /* Restricts the width of the profile section */
+    margin: 40px auto; /* Centers the profile section horizontally with top margin */
+    background: #252525; /* Matches the footer and background color */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    padding: 20px; /* Padding inside the profile container */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adds shadow for depth */
+}
+
+/* Profile card styling */
+.profile-card {
+    padding: 20px; /* Padding around the content of the profile */
+    border: 1px solid #323131; /* Border matching other sections */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Darker background for contrast */
+}
+
+/* Headings inside the profile */
+.profile-card h2 {
+    font-size: 28px; /* Font size for designer name */
+    color: #fff; /* White color for headings */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.profile-card h3 {
+    font-size: 22px; /* Font size for subheadings */
+    color: #a81c51; /* Color matching primary theme */
+    margin-top: 20px; /* Space above the subheading */
+}
+
+/* Paragraphs in the profile */
+.profile-card p {
+    font-size: 16px; /* Font size for descriptive text */
+    color: #ddd; /* Light gray color for text */
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+/* Media section styling */
+.media-section {
+    margin-top: 20px; /* Space above media sections */
+    border: 1px solid #a81c51; /* Border to highlight media */
+    padding: 15px; /* Padding inside media section */
+    border-radius: 5px; /* Rounded corners for media sections */
+    background-color: #252525; /* Match background */
+}
+
+/* Video and audio players */
+video, audio {
+    width: 100%; /* Full width for media elements */
+    border-radius: 5px; /* Rounded corners for media players */
+}
+
+/* AR Container */
+#ar-container {
+    height: 300px; /* Fixed height for AR section */
+    background-color: #333; /* Background for AR area */
+    display: flex; /* Flexbox to center content */
+    align-items: center; /* Centering content vertically */
+    justify-content: center; /* Centering content horizontally */
+    border-radius: 5px; /* Rounded corners */
+    color: #fff; /* Text color for AR placeholder */
+    font-size: 16px; /* Font size for AR text */
+}
+
+/* Button styling for interaction */
+.profile-card .button {
+    margin-top: 15px; /* Space above the button */
+    background: #a81c51; /* Primary button background */
+    color: #fff; /* Button text color */
+    display: inline-block; /* Inline block to center */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners for button */
+    transition: background 0.3s; /* Transition for background */
+}
+
+.profile-card .button:hover {
+    background: #fff; /* Background on hover */
+    color: #a81c51; /* Text color on hover */
+}
+
