@@ -15,6 +15,12 @@
     margin-top: 20px; /* Space below the video */
 }
 
+.spicy-rice-regular {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 /* Responsive adjustments */
 @media (min-width: 768px) {
     .about_h1 {
@@ -31,5 +37,29 @@
 h1 {
     margin-top: 20px; /* Space above the heading */
     margin-bottom: 10px; /* Space below the heading */
+}
+
+
+
+
+.input-group {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items */
+    margin: 0 auto; /* Center the input group within its container */
+    max-width: 550px; /* Set a max width for the entire input group */
+}
+
+.input-group .form-control {
+    width: 350px; /* Set a smaller width for the email input */
+    padding: 5px; /* Adjust padding for a smaller appearance */
+    font-size: 14px; /* Set font size */
+    height: 50px; /* Set a fixed height for consistency */
+}
+
+.input-group .btn {
+    padding: 5px 10px; /* Adjust padding for the button */
+    font-size: 14px; /* Set font size */
+    margin-left: 5px; /* Space between the input and button */
+    height: 40px; /* Set a fixed height for consistency */
 }
 
