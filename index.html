@@ -11,7 +11,34 @@
 	<link href="css/index.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap" rel="stylesheet">
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://meet.jit.si/external_api.js"></script>
+	<style>
+        /* Initially hide the Jitsi container */
+        #jitsi-container {
+            display: none;
+            height: 1000px;
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999; /* Ensures the container appears above other elements */
+            background-color: rgba(0, 0, 0, 0.8);
+        }
 
+        /* Style for the close button */
+        #close-meet-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 10000; /* Ensures the button appears above the Jitsi iframe */
+        }
+    </style>
 </head>
 <body>
 <div class="main clearfix position-relative">
@@ -182,8 +209,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn" class="btn btn-primary">Start Virtual Meet</button>
+
+    <!-- Full-screen Jitsi Meet Container -->
+    <div id="jitsi-container">
+        <!-- Close button to stop the meet and hide the container -->
+        <button id="close-meet-btn" class="close-meet-btn">Close Meet</button>
+    </div>
 	   </div>
 		
 	  </div>
@@ -199,7 +231,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -218,8 +249,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal1" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+	    <button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+    <!-- Full-screen Jitsi Meet Container -->
+    <div id="jitsi-container">
+        <!-- Close button to stop the meet and hide the container -->
+        <button id="close-meet-btn-2">Close Meet</button>
+    </div>
 	   </div>
 		
 	  </div>
@@ -235,7 +271,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -256,8 +291,9 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal2" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-3" class="btn btn-primary">Start Virtual Meet</button>
+    <div id="jitsi-container-3">
+    </div>
 	   </div>
 		
 	  </div>
@@ -273,7 +309,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -292,8 +327,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal3" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -309,7 +349,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -330,8 +369,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal4" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -347,7 +391,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -366,8 +409,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal5" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -383,7 +431,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -402,8 +449,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal6" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn">Close Meet</button>
+		</div>-
 	   </div>
 		
 	  </div>
@@ -419,7 +471,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -440,8 +491,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal7" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -457,7 +513,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -476,8 +531,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal8" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -493,7 +553,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -520,8 +579,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal9" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -537,7 +601,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -556,8 +619,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal10" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -573,7 +641,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -595,8 +662,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal11" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -612,7 +684,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -633,8 +704,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal12" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -650,7 +726,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -673,8 +748,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal13" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -690,7 +770,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -716,8 +795,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal14" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -733,7 +817,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -755,8 +838,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal15" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -772,7 +860,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -794,8 +881,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal16" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -811,7 +903,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -833,8 +924,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal18" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -850,7 +946,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -877,8 +972,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal19" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -894,7 +994,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -915,8 +1014,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal20" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -932,7 +1036,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -951,8 +1054,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal21" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -968,7 +1076,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -989,8 +1096,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal22" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -1006,7 +1118,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -1028,8 +1139,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal23" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -1045,7 +1161,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -1071,8 +1186,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal24" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -1088,7 +1208,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -1109,8 +1228,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal25" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+	    <button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+    <!-- Full-screen Jitsi Meet Container -->
+    <div id="jitsi-container">
+        <!-- Close button to stop the meet and hide the container -->
+        <button id="close-meet-btn-2">Close Meet</button>
+    </div>
 	   </div>
 		
 	  </div>
@@ -1126,7 +1250,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -1147,8 +1270,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal26" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -1164,7 +1292,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -1183,8 +1310,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal27" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -1200,7 +1332,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -1221,8 +1352,13 @@
 	   </div>
 	   
 	   <div class="folio_1im3  p-3 position-absolute bottom-0  text-center w-100 clearfix">
-	     <h6><a class="text-light" data-bs-target="#exampleModal28" data-bs-toggle="modal" href="#">MASTER PIECE</a></h6>
-		 <h6 class="mb-0 text-white font_14">People, Still Life</h6>
+		<button id="start-meet-btn-2" class="btn btn-primary">Start Virtual Meet</button>
+
+		<!-- Full-screen Jitsi Meet Container -->
+		<div id="jitsi-container">
+			<!-- Close button to stop the meet and hide the container -->
+			<button id="close-meet-btn-2">Close Meet</button>
+		</div>
 	   </div>
 		
 	  </div>
@@ -1238,7 +1374,6 @@
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn text-white bg_pink">Save changes</button>
 			  </div>
 			</div>
 		  </div>
@@ -1805,7 +1940,54 @@ function myFunction() {
   }
 }
 </script>
+<script>
+    let api;
 
+    // Function to generate a random room name
+    function generateRoomName() {
+        return 'meet_' + Math.random().toString(36).substring(7);
+    }
+
+    // Function to start the Jitsi Meet and show the full-screen container
+    function startJitsiMeet() {
+        const domain = 'meet.jit.si'; // Jitsi server domain
+        const roomName = generateRoomName(); // Generate a unique room name
+
+        const options = {
+            roomName: roomName,
+            width: '100%',
+            height: '100%',
+            parentNode: document.getElementById('jitsi-container'),
+            interfaceConfigOverwrite: {
+                SHOW_JITSI_WATERMARK: false
+            },
+            configOverwrite: {
+                disableDeepLinking: true
+            }
+        };
+
+        // Create the Jitsi meet session in the container
+        api = new JitsiMeetExternalAPI(domain, options);
+
+        // Show the Jitsi container in full screen
+        document.getElementById('jitsi-container').style.display = 'block';
+    }
+
+    // Function to stop the Jitsi Meet and hide the container
+    function closeJitsiMeet() {
+        if (api) {
+            api.dispose(); // Close the meeting
+        }
+        // Hide the Jitsi container
+        document.getElementById('jitsi-container').style.display = 'none';
+    }
+
+    // Start Jitsi Meet when the button is clicked
+    document.getElementById('start-meet-btn','start-meet-btn-2').addEventListener('click', startJitsiMeet);
+
+    // Close the meeting when the close button is clicked
+    document.getElementById('close-meet-btn','close-meet-btn-2').addEventListener('click', closeJitsiMeet);
+</script>
 </body>
 
 </html>
